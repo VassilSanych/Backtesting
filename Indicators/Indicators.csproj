@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net6.0</TargetFramework>
+    <Deterministic>False</Deterministic>
+    <AssemblyName>VGn.CryptoSdk.Indicators</AssemblyName>
+    <RootNamespace>VGn.CryptoSdk.Indicators</RootNamespace>
+    <Configurations>Debug;Release;Staging</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo\SharedAssemblyInfo.cs" Link="Properties\SharedAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HistoryDto\HistoryDto.csproj" />
+  </ItemGroup>
+
+</Project>

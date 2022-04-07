@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Configurations>Debug;Release;Staging</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0-preview-20220301-01" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.9-preview-20220210-07" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.9-preview-20220210-07" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Indicators\Indicators.csproj" />
+  </ItemGroup>
+
+
+</Project>

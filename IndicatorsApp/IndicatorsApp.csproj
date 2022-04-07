@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+        <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Source\Sec\Syncfusion.cs" Link="Syncfusion.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="NLog" Version="5.0.0-rc2" />
+    <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.0.1" />
+        <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+        <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.4.0.56" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CryptoApi\Interfaces\Interfaces.csproj" />
+    <ProjectReference Include="..\..\CryptoSdk\Dummy\Dummy.csproj" />
+    <ProjectReference Include="..\..\CryptoSdk\Markets\Markets.csproj" />
+    <ProjectReference Include="..\..\LogModule\LogModule.csproj" />
+    <ProjectReference Include="..\HistoryDto\HistoryDto.csproj" />
+    <ProjectReference Include="..\HistoryStorage\HistoryStorage.csproj" />
+    <ProjectReference Include="..\Indicators\Indicators.csproj" />
+  </ItemGroup>
+
+</Project>

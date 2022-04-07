@@ -16,6 +16,13 @@
 # Mono auto generated files
 mono_crash.*
 
+# Temp ignore
+HistoryFileLoader/
+MarketHistory/
+HistoryLoadConsole/
+HistoryStorage/
+
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
