@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
         <PlatformTarget>x64</PlatformTarget>
@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.3.0" />
-    <PackageReference Include="NLog" Version="5.0.0-rc2" />
-    <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.0.1" />
-        <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
-        <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.4.0.56" />
+    <PackageReference Include="Autofac" Version="7.0.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+    <PackageReference Include="NLog" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.1.0" />
+        <PackageReference Include="Syncfusion.SfChart.WPF" Version="21.2.9" />
   </ItemGroup>
 
   <ItemGroup>

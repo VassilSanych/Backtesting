@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Deterministic>False</Deterministic>
     <AssemblyName>VGn.CryptoSdk.HistoryDto</AssemblyName>
     <RootNamespace>VGn.CryptoSdk</RootNamespace>
@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="protobuf-net.Core" Version="3.0.101" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="protobuf-net.Core" Version="3.2.26" />
   </ItemGroup>
 
 </Project>

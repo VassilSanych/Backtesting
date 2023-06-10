@@ -68,7 +68,7 @@ public class BollingerBands<TMa> : LengthIndicator<float, BollingerBandSerie<flo
 	/// <summary>
 	/// Whether the indicator is set.
 	/// </summary>
-	public override bool IsFormed => MovingAverage.IsFormed;
+	public override bool IsFormed { get; protected set; }
 
 	/// <summary>
 	/// To handle the input value.
@@ -80,15 +80,25 @@ public class BollingerBands<TMa> : LengthIndicator<float, BollingerBandSerie<flo
 	{
 		var maValue = MovingAverage.Process(input, isFinal);
 		var devValue = _dev.Process(input, isFinal);
-		var band = Width * devValue;
+		return Process(maValue, devValue, isFinal);
+	}
+
+	public BollingerBandSerie<float> Process(float ma, float deviation, bool isFinal = true)
+	{
+		var band = Width * deviation;
 		var current = new BollingerBandSerie<float>
 		{
-			MovingAverage = maValue,
-			UpBand = maValue + band,
-			LowBand = maValue - band,
+			MovingAverage = ma,
+			UpBand = ma + band,
+			LowBand = ma - band,
+			Deviation = deviation,
 		};
 		if (isFinal)
+		{
 			Value = current;
+			IsFormed = true;
+		}
+
 		return current;
 	}
 }
@@ -99,5 +109,7 @@ public struct BollingerBandSerie<T>
 	public T MovingAverage { get; set; }
 	public T UpBand { get; set; }
 	public T LowBand { get; set; }
+
+	public T Deviation { get; set; }
 }
 

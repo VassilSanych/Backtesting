@@ -27,16 +27,39 @@ namespace VGn.CryptoSdk
 		///  Закрывай короткую позицию
 		/// </summary>
 		[ProtoEnum] [EnumMember] Cover = 3,
+		
 		/// <summary>
 		///  Вставай в короткую позицию
 		/// </summary>
 		[ProtoEnum] [EnumMember] Short = 4,
-	    
-	    
+
 		/// <summary>
 		///  Закрывай все позиции
 		/// </summary>
-		[ProtoEnum] [EnumMember] GetOut = 5
+		[ProtoEnum] [EnumMember] GetOut = 5,
+
+		//добавочные статусы результата торговли
+		
+		/// <summary>
+		///  Частичная длинная позиция
+		/// </summary>
+		[ProtoEnum] [EnumMember] PartialBuy = 7,
+
+		/// <summary>
+		///  Частичная продажа
+		/// </summary>
+		[ProtoEnum] [EnumMember] PartialSell = 8,
+		
+		/// <summary>
+		///  Частичная короткая позиция
+		/// </summary>
+		[ProtoEnum] [EnumMember] PartialShort = 9,
+
+		/// <summary>
+		///  Частичная откуп
+		/// </summary>
+		[ProtoEnum] [EnumMember] PartialCover = 10,
+
 	}
 
 
