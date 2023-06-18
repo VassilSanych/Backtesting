@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Deterministic>False</Deterministic>
     <AssemblyName>VGn.CryptoSdk.HistoryDto</AssemblyName>
     <RootNamespace>VGn.CryptoSdk</RootNamespace>
