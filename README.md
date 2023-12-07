@@ -20,7 +20,7 @@ But that code is not posted here.
 
 **Wallets for donation**
 
-DASH: XqEMwagkcpJuETftjg3C6xNkB1cYqSYDS4 
+DASH: XckBmjAXnjXWUknpGTXzezSE6ii4Jc8WfE 
 
 ![DASH](DASH.png)
 
